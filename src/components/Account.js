@@ -39,7 +39,7 @@ export default function Account(props) {
                   <Button icon onClick={handleMinus}>
                     <Icon name="minus" />
                   </Button>
-                  <Input type="number" step="1" onChange={(e) => {setValue(e.target.value)}} value={value}/>
+                  <Input type="number" step="1" pattern="\d*" onChange={(e) => {setValue(e.target.value)}} value={value}/>
                   <Button icon onClick={handlePlus}>
                     <Icon name="plus" />
                   </Button>
